@@ -1,11 +1,11 @@
 class Dog
-  attr_reader :name, :species, :age
+  attr_reader :name, :breed, :age
   
   @@all = []
   
-  def initialize(name, species, age)
+  def initialize(name, breed, age)
     @name = name
-    @species = species
+    @breed = breed
     @age = age
     
     @@all << self
