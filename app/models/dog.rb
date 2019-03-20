@@ -1,5 +1,5 @@
 class Dog
-  attr_reader :name, :species, :age, :all
+  attr_reader :name, :species, :age
   
   @@all = []
   
@@ -9,5 +9,12 @@ class Dog
     @age = age
     
     @@all << self
+  end
+  
+  
+  class << self
+    def all
+      @@all
+    end
   end
 end
